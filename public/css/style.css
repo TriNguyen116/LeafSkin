@@ -113,6 +113,71 @@ ol {
 	border-color: #164206;
 	box-shadow: 0 0 0 0.25rem rgba(21, 112, 69, 0.25);
 }
+
+/*---------------------
+  About CSS
+-----------------------*/
+
+.why-choose-section {
+  padding: 7rem 0; }
+  .why-choose-section .img-wrap {
+    position: relative; }
+    .why-choose-section .img-wrap:before {
+      position: absolute;
+      content: "";
+      width: 255px;
+      height: 217px;
+      background-image: url("../img/about/dots-green.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      -webkit-transform: translate(-40%, -40%);
+      -ms-transform: translate(-40%, -40%);
+      transform: translate(-40%, -40%);
+      z-index: -1; }
+    .why-choose-section .img-wrap img {
+      border-radius: 20px; }
+
+			.section-title {
+				font-weight: bold;
+				color: #164206; }
+				.feature {
+					margin-bottom: 30px; }
+					.feature .icon {
+						display: inline-block;
+						position: relative;
+						margin-bottom: 20px; }
+						.feature .icon:before {
+							content: "";
+							width: 33px;
+							height: 33px;
+							position: absolute;
+							background: rgba(59, 93, 80, 0.2);
+							border-radius: 50%;
+							right: -8px;
+							bottom: 0; }
+					.feature h3 {
+						font-size: 14px;
+						color: #2f2f2f; }
+					.feature p {
+						font-size: 14px;
+						line-height: 22px;
+						color: #6a6a6a; }
+
+						.untree_co-section {
+							padding: 7rem 0; }
+		.name-member{
+				text-decoration: none;
+				-webkit-transition: .3s all ease;
+				-o-transition: .3s all ease;
+				transition: .3s all ease;
+				color: #164206;
+				text-decoration: none;
+				
+		}
+		a:hover {
+			color: #4f6f52;
+			}
+
 /*---------------------
   Helper CSS
 -----------------------*/
@@ -674,7 +739,7 @@ ol {
 	bottom: 0;
 	height: 2px;
 	width: 100%;
-	background: #ca1515;
+	background: #164206;
 	content: "";
 }
 
@@ -2207,7 +2272,7 @@ ol {
 }
 
 .cart__btn a span {
-	color: #ca1515;
+	color: #164206;
 	font-size: 14px;
 	margin-right: 5px;
 }
@@ -3038,7 +3103,7 @@ ol {
 
 .contact__address ul li h6 i {
 	font-size: 16px;
-	color: #ca1515;
+	color: #164206;
 	margin-right: 5px;
 }
 
