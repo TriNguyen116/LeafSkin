@@ -36,6 +36,7 @@ body {
 	height: 100%;
 	font-family: "Montserrat", sans-serif;
 	-webkit-font-smoothing: antialiased;
+	
 }
 
 h1,
@@ -440,7 +441,7 @@ ol {
 	left: 0;
 	top: 56px;
 	width: 150px;
-	background: #111111;
+	background: #164206;
 	text-align: left;
 	padding: 2px 0;
 	z-index: 9;
@@ -2838,7 +2839,7 @@ ol {
 .blog__details__item__title .tip {
 	font-size: 12px;
 	color: #ffffff;
-	background: #ca1515;
+	background: #164206;
 	text-transform: uppercase;
 	font-weight: 500;
 	display: inline-block;
@@ -2897,7 +2898,7 @@ ol {
 }
 
 .blog__details__quote {
-	border-top: 2px solid #ca1515;
+	border-top: 2px solid #164206;
 	position: relative;
 	padding-top: 22px;
 	margin-bottom: 20px;
@@ -2907,7 +2908,7 @@ ol {
 	height: 30px;
 	width: 30px;
 	font-size: 18px;
-	color: #ca1515;
+	color: #164206;
 	background: #ffffff;
 	position: absolute;
 	left: 0;
@@ -3005,7 +3006,7 @@ ol {
 	bottom: -5px;
 	height: 1px;
 	width: 100%;
-	background: #ca1515;
+	background: #164206;
 	content: "";
 }
 
@@ -3060,7 +3061,7 @@ ol {
 
 .blog__comment__item__text ul li i {
 	font-size: 14px;
-	color: #ca1515;
+	color: #164206;
 	margin-right: 5px;
 }
 
