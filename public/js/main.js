@@ -11,6 +11,40 @@ Created: Colorib
 
 (function ($) {
 
+    $(document).ready(function() {
+        // Lấy chiều cao của cửa sổ trình duyệt
+        var windowHeight = $(window).height();
+    
+        // Duyệt qua từng phần tử .categories__item
+        $('.categories__item').each(function(index) {
+            // Tính toán khoảng cách từ vị trí hiện tại của phần tử đến phía trên cửa sổ
+            var offsetTop = $(this).offset().top - $(window).scrollTop();
+            // Tính toán khoảng cách từ vị trí hiện tại của phần tử đến vị trí trung tâm của cửa sổ
+            var centerOffset = windowHeight / 2 - offsetTop;
+    
+            // Sử dụng Anime.js để thực hiện hiệu ứng
+            anime({
+                targets: this,
+                translateX: {
+                    value: [centerOffset, 0],
+                    duration: 2000,
+                    easing: 'easeOutQuad'
+                },
+                opacity: {
+                    value: [0, 1],
+                    duration: 2000,
+                    easing: 'easeOutSine'
+                },
+                scale: {
+                    value: [0.5, 1],
+                    duration: 2000,
+                    easing: 'easeOutSine'
+                },
+                delay: index * 100 // Tạo độ trễ khác nhau cho từng phần tử
+            });
+        });
+    });
+    
     /*------------------
         Preloader
     --------------------*/

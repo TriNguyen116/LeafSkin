@@ -45,18 +45,18 @@
             </a></li>
         </ul>
         <div class="offcanvas__logo">
-            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+            <a href="./index.html"><img src="img/leafskhinlogo.jpg" alt=""></a>
         </div>
         <div id="mobile-menu-wrap"></div>
         <div class="offcanvas__auth">
             <a href="./login.html">Login</a>
-            <a href="#">Register</a>
+            <a href="./register.html">Register</a>
         </div>
     </div>
     <!-- Offcanvas Menu End -->
 
     <!-- Header Section Begin -->
-    <header class="header">
+    <header class="header fixed-top">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xl-3 col-lg-2">
@@ -68,25 +68,14 @@
                     <nav class="header__menu">
                         <ul>
                             <li class="active"><a href="./index.html">Home</a></li>
-                            <!-- <li><a href="#">Women’s</a></li>
-                            <li><a href="#">Men’s</a></li> -->
-                            <li><a href="#">Shop</a>
-                                <ul class="dropdown">
-                                    <li><a href="./shop1.html">Shop</a></li>
-                                    <li><a href="./product-details-1.html">Product Details</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="./shop1.html">Shop</a>
                             <li><a href="#">Cart</a>
                                 <ul class="dropdown">
                                     <li><a href="./shop-cart1.html">Shop Cart</a></li>
                                     <li><a href="./checkout1.html">Checkout</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Blog</a>
-                                <ul class="dropdown">
-                                    <li><a href="./blog.html">Blog</a></li>
-                                    <li><a href="./blog-details.html">Blog Details</a></li>
-                                </ul>
+                            <li><a href="./blog.html">Blog</a>
                             </li>
                             <li><a href="./contact.html">Contact</a></li>
                             <li><a href="./about.html">About Us</a></li>
@@ -97,8 +86,8 @@
                 <div class="col-lg-3">
                     <div class="header__right">
                         <div class="header__right__auth">
-                            <a href="./login.html">Login</a>
-                            <a href="./register.html">Register</a>
+                            <a class="login" href="./login.html">Login</a>
+                            <a class="register" href="./register.html">Register</a>
                         </div>
                         <ul class="header__right__widget">
                             <li><span class="icon_search search-switch"></span></li>
@@ -122,59 +111,52 @@
     <!-- Categories Section Begin -->
     <section class="categories">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 p-0">
                     <div class="categories__item categories__large__item set-bg"
                     data-setbg="img/categories-newproduct/6.jpg" >
                     <div class="categories__text">
-                        <h1>Women’s fashion</h1>
-                        <p>Sitamet, consectetur adipiscing elit, sed do eiusmod tempor incidid-unt labore
-                        edolore magna aliquapendisse ultrices gravida.</p>
-                        <a href="#">Shop now</a>
+                        <h1>Women’s skincare</h1>
+                        <p>Tự hào là thương hiệu chuyên cung cấp các sản phẩm làm đẹp, chăm sóc da thuần chay cho nữ giới.</p>
+                        <a href="./shop1.html">Shop now</a>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 p-0">
+                <div class="row categories-under-bg">
+                    <div class="col-lg-3 col-md-3 col-sm-6 p-0">
                         <div class="categories__item set-bg" data-setbg="img/categories-newproduct/BODYCARE-1-1.jpg">
                             <div class="categories__text">
                                 <h4>SKIN CARE</h4>
                                 <p>358 items</p>
-                                <a href="#">Shop now</a>
+                                <a href="./shop1.html">Shop now</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 p-0">
+                    <div class="col-lg-3 col-md-3 col-sm-6 p-0">
                         <div class="categories__item set-bg" data-setbg="img/categories-newproduct/SKINCARE-1-1.jpg">
                             <div class="categories__text">
                                 <h4>SKIN BODY</h4>
                                 <p>273 items</p>
-                                <a href="#">Shop now</a>
+                                <a href="./shop1.html">Shop now</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 p-0">
+                    <div class="col-lg-3 col-md-3 col-sm-6 p-0">
                         <div class="categories__item set-bg" data-setbg="img/categories-newproduct/SKINCARE-2-2.jpg">
                             <div class="categories__text">
                                 <h4>Cosmetics</h4>
                                 <p>159 items</p>
-                                <a href="#">Shop now</a>
+                                <a href="./shop1.html">Shop now</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 p-0">
+                    <div class="col-lg-3 col-md-3 col-sm-6 p-0">
                         <div class="categories__item set-bg" data-setbg="img/categories-newproduct/MAKE-UP-2-2.jpg">
                             <div class="categories__text">
                                 <h4>MAKE UP</h4>
                                 <p>792 items</p>
-                                <a href="#">Shop now</a>
+                                <a href="./shop1.html">Shop now</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
     </div>
 </section>
 <!-- Categories Section End -->
@@ -183,18 +165,18 @@
 <section class="product spad">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-4">
+            <div class="col-lg-6 col-md-4">
                 <div class="section-title">
                     <h4>New product</h4>
                 </div>
             </div>
-            <div class="col-lg-8 col-md-8">
+            <div class="col-lg-6 col-md-8">
                 <ul class="filter__controls">
-                    <li class="active" data-filter="*">All</li>
-                    <li data-filter=".skincare">SKIN CARE</li>
-                    <li data-filter=".skinbody">SKIN BODY</li>
-                    <li data-filter=".makeup">MAKEUP</li>
-                    <li data-filter=".cosmetics">COSMETICS</li>
+                    <li class="active all" data-filter="*">All</li>
+                    <li class="skincare" data-filter=".skincare">SKIN CARE</li>
+                    <li class="skinbody" data-filter=".skinbody">SKIN BODY</li>
+                    <li class="makeup" data-filter=".makeup">MAKEUP</li>
+                    <li class="cosmetics" data-filter=".cosmetics">COSMETICS</li>
                 </ul>
             </div>
         </div>
@@ -204,13 +186,13 @@
                     <div class="product__item__pic set-bg" data-setbg="img/categories-newproduct/new-product-1.jpg">
                         <div class="label new">New</div>
                         <ul class="product__hover">
-                            <li><a href="img/product/product-1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                            <li><a href="./product-details-1.html" ><span class="arrow_expand"></span></a></li>
                             <li><a href="#"><span class="icon_heart_alt"></span></a></li>
                             <li><a href="#"><span class="icon_bag_alt"></span></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">
-                        <h6><a href="#">Buttons tweed blazer</a></h6>
+                        <h6><a href="#">ARTISTRY BALANCING</a></h6>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -218,7 +200,7 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                         </div>
-                        <div class="product__price">$ 59.0</div>
+                        <div class="product__price">722,000đ</div>
                     </div>
                 </div>
             </div>
@@ -226,13 +208,13 @@
                 <div class="product__item">
                     <div class="product__item__pic set-bg" data-setbg="img/categories-newproduct/new-product-2.jpg">
                         <ul class="product__hover">
-                            <li><a href="img/product/product-2.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                            <li><a href="./product-details-1.html" ><span class="arrow_expand"></span></a></li>
                             <li><a href="#"><span class="icon_heart_alt"></span></a></li>
                             <li><a href="#"><span class="icon_bag_alt"></span></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">
-                        <h6><a href="#">Flowy striped skirt</a></h6>
+                        <h6><a href="#">ARTISTRY REACTIVATION EYE CREAM</a></h6>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -240,22 +222,22 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                         </div>
-                        <div class="product__price">$ 49.0</div>
+                        <div class="product__price">1,395,000đ</div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 mix makeup">
                 <div class="product__item">
                     <div class="product__item__pic set-bg" data-setbg="img/categories-newproduct/new-product-3.jpg">
-                        <div class="label stockout">out of stock</div>
+                        <!-- <div class="label stockout">out of stock</div> -->
                         <ul class="product__hover">
-                            <li><a href="img/product/product-3.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                            <li><a href="./product-details-1.html" ><span class="arrow_expand"></span></a></li>
                             <li><a href="#"><span class="icon_heart_alt"></span></a></li>
                             <li><a href="#"><span class="icon_bag_alt"></span></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">
-                        <h6><a href="#">Cotton T-Shirt</a></h6>
+                        <h6><a href="#">Gila Water Powder</a></h6>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -263,7 +245,7 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                         </div>
-                        <div class="product__price">$ 59.0</div>
+                        <div class="product__price">375,000đ</div>
                     </div>
                 </div>
             </div>
@@ -271,13 +253,13 @@
                 <div class="product__item">
                     <div class="product__item__pic set-bg" data-setbg="img/categories-newproduct/new-product-4.jpg">
                         <ul class="product__hover">
-                            <li><a href="img/product/product-4.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                            <li><a href="./product-details-1.html" ><span class="arrow_expand"></span></a></li>
                             <li><a href="#"><span class="icon_heart_alt"></span></a></li>
                             <li><a href="#"><span class="icon_bag_alt"></span></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">
-                        <h6><a href="#">Slim striped pocket shirt</a></h6>
+                        <h6><a href="#">Rare Beauty Blush</a></h6>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -285,7 +267,7 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                         </div>
-                        <div class="product__price">$ 59.0</div>
+                        <div class="product__price">325,000đ</div>
                     </div>
                 </div>
             </div>
@@ -293,13 +275,13 @@
                 <div class="product__item">
                     <div class="product__item__pic set-bg" data-setbg="img/categories-newproduct/new-product-5.jpg">
                         <ul class="product__hover">
-                            <li><a href="img/product/product-5.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                            <li><a href="./product-details-1.html" ><span class="arrow_expand"></span></a></li>
                             <li><a href="#"><span class="icon_heart_alt"></span></a></li>
                             <li><a href="#"><span class="icon_bag_alt"></span></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text" >
-                        <h6><a href="#">Fit micro corduroy shirt</a></h6>
+                        <h6><a href="#">Artsitry Sunscreen</a></h6>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -307,7 +289,7 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                         </div>
-                        <div class="product__price">$ 59.0</div>
+                        <div class="product__price">1,160,000đ</div>
                     </div>
                 </div>
             </div>
@@ -316,13 +298,13 @@
                     <div class="product__item__pic set-bg" data-setbg="img/categories-newproduct/new-product-6-3.jpg">
                         <div class="label sale">Sale</div>
                         <ul class="product__hover">
-                            <li><a href="img/product/product-6-3.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                            <li><a href="./product-details-1.html" ><span class="arrow_expand"></span></a></li>
                             <li><a href="#"><span class="icon_heart_alt"></span></a></li>
                             <li><a href="#"><span class="icon_bag_alt"></span></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">
-                        <h6><a href="#">Tropical Kimono</a></h6>
+                        <h6><a href="#">Body Shop Banana Shampoo</a></h6>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -330,7 +312,7 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                         </div>
-                        <div class="product__price">$ 49.0 <span>$ 59.0</span></div>
+                        <div class="product__price">259,000đ <span>315.000đ</span></div>
                     </div>
                 </div>
             </div>
@@ -338,13 +320,13 @@
                 <div class="product__item">
                     <div class="product__item__pic set-bg" data-setbg="img/categories-newproduct/new-product-7.jpg">
                         <ul class="product__hover">
-                            <li><a href="img/product/product-7.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                            <li><a href="./product-details-1.html" ><span class="arrow_expand"></span></a></li>
                             <li><a href="#"><span class="icon_heart_alt"></span></a></li>
                             <li><a href="#"><span class="icon_bag_alt"></span></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">
-                        <h6><a href="#">Contrasting sunglasses</a></h6>
+                        <h6><a href="#">Body Shop Banana Hair Mask</a></h6>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -352,22 +334,23 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                         </div>
-                        <div class="product__price">$ 59.0</div>
+                        <div class="product__price">987,500đ</div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 mix skinbody">
                 <div class="product__item sale">
                     <div class="product__item__pic set-bg" data-setbg="img/categories-newproduct/new-product-8.jpg">
-                        <div class="label">Sale</div>
+                        <!-- <div class="label">Sale</div> -->
                         <ul class="product__hover">
-                            <li><a href="img/product/product-8.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                            <li><a href="./product-details-1.html" ><span class="arrow_expand"></span></a></li>
                             <li><a href="#"><span class="icon_heart_alt"></span></a></li>
                             <li><a href="#"><span class="icon_bag_alt"></span></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">
-                        <h6><a href="#">Water resistant backpack</a></h6>
+                        <h6><a href="#">Sukiri Facial Moisturiser
+                        </a></h6>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -375,7 +358,7 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                         </div>
-                        <div class="product__price">$ 49.0 <span>$ 59.0</span></div>
+                        <div class="product__price">259,000đ</div>
                     </div>
                 </div>
             </div>
@@ -426,34 +409,37 @@
 <!-- Trend Section Begin -->
 <section class="trend spad">
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
+                <div class="trend-section">
+                    <h4>Hot Trend</h4>
+                </div>
+        </div>
+        <div class="row">    
+            <div class="col-lg-4 col-md-4 col-sm-6 ">
+                <div class="trend__item">
+                    <div class="trend__item__pic">
+                        <img src="img/hot-trend/trend-1.jpg" alt="" width="100" height="100"> 
+                    </div>
+                    <div class="trend__item__text">
+                        <h6>Face Care Combo</h6>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product__price">395,000đ</div>
+                    </div>
+                </div>
+            </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
-                <div class="trend__content">
-                    <div class="section-title">
-                        <h4>Hot Trend</h4>
-                    </div>
-                    <div class="trend__item">
-                        <div class="trend__item__pic">
-                            <img src="img/hot-trend/trend-1.jpg" alt="" width="100" height="100"> 
-                        </div>
-                        <div class="trend__item__text">
-                            <h6>Chain bucket bag</h6>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product__price">$ 59.0</div>
-                        </div>
-                    </div>
-                    <div class="trend__item">
+                <div class="trend__item">
                         <div class="trend__item__pic">
                             <img src="img/hot-trend/trend-2.jpg" alt="" width="100" height="100">
                         </div>
                         <div class="trend__item__text">
-                            <h6>Pendant earrings</h6>
+                            <h6>The Body Shop Facial Combo</h6>
                             <div class="rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -461,139 +447,153 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                             </div>
-                            <div class="product__price">$ 59.0</div>
+                            <div class="product__price">1,395,000đ</div>
                         </div>
                     </div>
-                    <div class="trend__item">
-                        <div class="trend__item__pic">
-                            <img src="img/hot-trend/trend-3.jpg" alt="" width="100" height="100">
-                        </div>
-                        <div class="trend__item__text">
-                            <h6>Cotton T-Shirt</h6>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product__price">$ 59.0</div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
-                <div class="trend__content">
-                    <div class="section-title">
-                        <h4>Best seller</h4>
+                <div class="trend__item">
+                    <div class="trend__item__pic">
+                        <img src="img/hot-trend/trend-3.jpg" alt="" width="100" height="100">
                     </div>
-                    <div class="trend__item">
-                        <div class="trend__item__pic">
-                            <img src="img/hot-trend/seller.jpg" alt="" width="100" height="100">
+                    <div class="trend__item__text">
+                        <h6>Cocoon Toner</h6>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
                         </div>
-                        <div class="trend__item__text">
-                            <h6>Cotton T-Shirt</h6>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product__price">$ 59.0</div>
-                        </div>
-                    </div>
-                    <div class="trend__item">
-                        <div class="trend__item__pic">
-                            <img src="img/hot-trend/seller-2.jpg" alt="" width="100" height="100">
-                        </div>
-                        <div class="trend__item__text">
-                            <h6>Zip-pockets pebbled tote <br />briefcase</h6>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product__price">$ 59.0</div>
-                        </div>
-                    </div>
-                    <div class="trend__item">
-                        <div class="trend__item__pic">
-                            <img src="img/hot-trend/seller-3.jpg" alt="" width="100" height="100">
-                        </div>
-                        <div class="trend__item__text">
-                            <h6>Round leather bag</h6>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product__price">$ 59.0</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-                <div class="trend__content">
-                    <div class="section-title">
-                        <h4>Feature</h4>
-                    </div>
-                    <div class="trend__item">
-                        <div class="trend__item__pic">
-                            <img src="img/hot-trend/feature.jpg" alt="" width="100" height="100">
-                        </div>
-                        <div class="trend__item__text">
-                            <h6>Bow wrap skirt</h6>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product__price">$ 59.0</div>
-                        </div>
-                    </div>
-                    <div class="trend__item">
-                        <div class="trend__item__pic">
-                            <img src="img/hot-trend/feature1.jpg" alt="" width="100" height="100">
-                        </div>
-                        <div class="trend__item__text">
-                            <h6>Metallic earrings</h6>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product__price">$ 59.0</div>
-                        </div>
-                    </div>
-                    <div class="trend__item">
-                        <div class="trend__item__pic">
-                            <img src="img/hot-trend/feature2.jpg" alt="" height="100" width="100">
-                        </div>
-                        <div class="trend__item__text">
-                            <h6>Flap cross-body bag</h6>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product__price">$ 59.0</div>
-                        </div>
+                        <div class="product__price">1,975,000đ</div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row justify-content-center">
+            <div class="trend-section">
+                <h4>Best seller</h4>
+            </div>
     </div>
+        <div class="row">    
+            <div class="col-lg-4 col-md-4 col-sm-6 ">
+                <div class="trend__item">
+                    <div class="trend__item__pic">
+                        <img src="img/hot-trend/seller.jpg" alt="" width="100" height="100">
+                    </div>
+                    <div class="trend__item__text">
+                        <h6>AVCN Radiance Tonic</h6>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product__price">876,000đ</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="trend__item">
+                    <div class="trend__item__pic">
+                        <img src="img/hot-trend/seller-2.jpg" alt="" width="100" height="100">
+                    </div>
+                    <div class="trend__item__text">
+                        <h6>Innisfree Green Serum</h6>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product__price">595,000đ</div>
+                    </div>
+                </div>
+            </div>
+            <div class="trend__item">
+                <div class="trend__item__pic">
+                    <img src="img/hot-trend/seller-3.jpg" alt="" width="100" height="100">
+                </div>
+                <div class="trend__item__text">
+                    <h6>Botanical Shampo</h6>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="product__price">495,000đ</div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="row justify-content-center">
+            <div class="trend-section">
+                <h4>Hot Trend</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="trend__item">
+                    <div class="trend__item__pic">
+                        <img src="img/hot-trend/feature.jpg" alt="" width="100" height="100">
+                    </div>
+                    <div class="trend__item__text">
+                        <h6>Benton GreenTea Toner</h6>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product__price">795,000đ</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="trend__item">
+                    <div class="trend__item__pic">
+                        <img src="img/hot-trend/feature1.jpg" alt="" width="100" height="100">
+                    </div>
+                    <div class="trend__item__text">
+                        <h6>Innisfree Lip Balm</h6>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product__price">695,000đ</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="trend__item">
+                    <div class="trend__item__pic">
+                        <img src="img/hot-trend/feature2.jpg" alt="" height="100" width="100">
+                    </div>
+                    <div class="trend__item__text">
+                        <h6>Biossance Cleansing Oil</h6>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product__price">1,795,000đ</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+
 </section>
 <!-- Trend Section End -->
 
@@ -742,8 +742,7 @@
                     <div class="footer__logo">
                         <a href="./index.html"><img src="img/leafskhinlogo.jpg" alt="" width="120" height="50"></a>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    cilisis.</p>
+                    <p>Tự hào là thương hiệu chuyên cung cấp các sản phẩm làm đẹp, chăm sóc da thuần chay cho nữ giới.</p>
                     <div class="footer__payment">
                         <a href="#"><img src="img/payment/payment-1.png" alt=""></a>
                         <a href="#"><img src="img/payment/payment-2.png" alt=""></a>
@@ -827,6 +826,8 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.nicescroll.min.js"></script>
 <script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
 </body>
 
 </html>
