@@ -45,6 +45,32 @@ Created: Colorib
         });
     });
     
+    
+
+
+    // $(document).ready(function() {
+    //     $('.categories__item').hover(function() {
+    //         // Add highlight effect to the hovered item
+    //         $(this).css({
+    //             'transform': 'translateY(-10px)',
+    //             'box-shadow': '2px 4px 4px 4px rgba(205, 175, 130,1)',
+    //             'z-index': 10
+    //         });
+    //         // Dim other items
+    //         // $('.categories__item').not(this).css('opacity', '0.5');
+    //     }, function() {
+    //         // Remove highlight effect
+    //         $(this).css({
+    //             'transform': 'translateY(0)',
+    //             'box-shadow': '2px 4px 4px 4px rgba(205, 175, 130,1)',
+    //             'z-index': 1
+    //         });
+    //         // Reset opacity for other items
+    //         $('.categories__item').css('opacity', '1');
+    //     });
+    // });
+
+
     /*------------------
         Preloader
     --------------------*/
